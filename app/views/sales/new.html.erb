@@ -1,0 +1,17 @@
+<h1>Ingresa los datos</h1>
+<%= form_with model: Sale.new, local: true do |f| %>
+<%= f.label :cod%><br>
+<%= f.number_field :cod, id: :cod %><br><br>
+<%= f.label :detail%><br>
+<%= f.text_field :detail, id: :detail %><br><br>
+<%= f.label :category%><br>
+<%= f.number_field :category, id: :category %><br><br>
+<%= f.label :value%><br>
+<%= f.number_field :value, id: :value %><br><br>
+<%= f.label :discount%><br>
+<%= f.number_field :discount, id: :discount %><br><br>
+<%= f.label :tax%><br>
+<%= f.check_box :tax, id: :tax %><br><br>
+<%= f.submit "Crear" %>
+<% end %>
+<br>
